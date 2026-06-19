@@ -18,7 +18,7 @@ class BasicCalculator(CalculatorInterface):
         self.__latest_result = value
 
     # Implementing the abstract method
-    def calculate(self, operation: str, a: float, b: float) -> float:
+    def calculate(self, operation: str, a: float, b: float):
         if operation == "add":
             self._update_result(a + b)
         elif operation == "subtract":
